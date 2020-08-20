@@ -50,7 +50,7 @@ In this example, the certificate name is **domain name**, the certificate file i
       location / {
     						
     ```
-    Note that on Ubuntu, you may not find the above attributes in nginx.conf, instead, they are located in /etc/nginx/sites-enabled/default.
+    **Note:**  On Ubuntu, you may not find the above attributes in nginx.conf, instead, they are located in /etc/nginx/sites-enabled/default.
     
     Modify the nginx.conf file as follows:
 
