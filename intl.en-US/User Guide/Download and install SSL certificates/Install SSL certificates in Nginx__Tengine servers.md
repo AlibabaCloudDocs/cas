@@ -50,12 +50,13 @@ In this example, the certificate name is **domain name**, the certificate file i
       location / {
     						
     ```
-
+    Note that on Ubuntu, you may not find the above attributes in nginx.conf, instead, they are located in /etc/nginx/sites-enabled/default.
+    
     Modify the nginx.conf file as follows:
 
     ``` {#codeblock_xt8_f4t_yvg}
     
-    The attributes that start with "ssl" are related to certificate configurations, while the others can be configured as needed.
+    # The attributes that start with "ssl" are related to certificate configurations, while the others can be configured as needed.
     server {
     listen 443;
     server_name localhost;  # Replace localhost with the domain name bound to your certificate.
