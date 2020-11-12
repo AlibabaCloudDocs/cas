@@ -159,14 +159,6 @@ https://domain name   # Replace domain name with the domain name that is bound t
 
 If a lock icon appears in the address bar, the certificate has been installed.
 
-After a DV or OV SSL certificate is deployed on your server, the following results appear when you access the website from your browser:
-
-![Browser display effect after a DV or OV SSL certificate is installed](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/8346805061/p108043.png)
-
-After an EV SSL certificate is deployed on your server, the following results appear when you access the website from your browser:
-
-![Browser display effect after an EV SSL certificate is installed](../images/p108044.png)
-
 If you encounter the following issues, handle them based on the following table.
 
 |Issue|Possible cause|Solution|
