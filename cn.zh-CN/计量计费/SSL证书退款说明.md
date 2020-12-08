@@ -25,13 +25,13 @@ keyword: [阿里云证书, SSL证书, 退款, 全额退款]
 |未签发|购买后未超过5个自然日|**还未提交审核**或已提交审核但是**审核失败**|支持|全额退款|无需人工审核，退款即时到账。|
 |未签发|购买后已超过5个自然日至证书到期前15个自然日|**还未提交审核**或已提交审核但是**审核失败**|支持|全额退款|需人工审核，符合要求后可退款，审核最长15个工作日内（平均5个工作日内）。审核通过后退款即时到账。关于如何查看证书的到期时间，请参见[相关操作](#section_tgl_wo3_23d)。|
 |未签发|距离证书到期少于15个自然日|无论是否已通过审核|不支持|无|如果在证书过期前少于15个工作日提交退款申请，会导致退款申请无法及时完成，最终无法成功退款。|
-|已签发|签发后30个自然日内完成了吊销|审核已通过|支持|全额退款|需人工审核，符合要求后可退款，审核最长15个工作日内（平均5个工作日内）。审核通过后退款即时到账。|
+|已签发|签发后28个自然日内完成了吊销|审核已通过|支持|全额退款|需人工审核，符合要求后可退款，审核最长15个工作日内（平均5个工作日内）。审核通过后退款即时到账。|
 |已签发超过30个自然日|未过期|审核已通过|不支持|无|无|
 |未签发或已签发|已过期|无论是否已通过审核|不支持|无|无|
 
 在证书列表中，定位到**已签发**状态的证书。单击**操作**列的**详情**，在**证书详情**页面查看证书具体的签发日期。
 
-![证书签发日期](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8274019951/p136003.png)
+![证书签发日期](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8274019951/p136003.png)
 
 ## 退款流程
 
@@ -39,7 +39,7 @@ keyword: [阿里云证书, SSL证书, 退款, 全额退款]
 
 2.  在概览页面，定位到需要退款的证书并单击**退款**。
 
-    ![退款](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8274019951/p149195.png)
+    ![退款](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8274019951/p149195.png)
 
     **说明：** 您可以在证书列表中找到可以执行退款操作的证书。对于**已签发**证书，您的证书如果签发时间超过30个自然日，证书列表中该证书将不会展示**退款**按钮。
 
@@ -72,20 +72,20 @@ keyword: [阿里云证书, SSL证书, 退款, 全额退款]
 
     **说明：** 仅状态为**申请审核中**的证书才可以取消退款。
 
-    ![取消退款](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8274019951/p97650.png)
+    ![取消退款](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8274019951/p97650.png)
 
 -   **查看退款审核进度**
 
     提交退款申请后，您可在SSL证书控制台的退款列表中查看退款审核的进度和状态。如果退款审核失败，您可在该页面查看到相关提示和说明。
 
-    ![退款状态](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/9274019951/p132844.png)
+    ![退款状态](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9274019951/p132844.png)
 
 -   **查看证书的到期时间**
     -   **已签发证书**
 
         如果证书已签发，您可在证书列表中搜索**已签发**状态的证书，查看该证书的**到期时间**。
 
-        ![证书有效期时间](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/9274019951/p101277.png)
+        ![证书有效期时间](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9274019951/p101277.png)
 
     -   **未签发证书**
 
