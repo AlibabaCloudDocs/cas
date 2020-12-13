@@ -92,7 +92,7 @@ keyword: [阿里云SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
 
     ```
     server {
-     listen 443 ssl;
+     listen 80;
      server_name www.certificatestests.com; #将www.certificatestests.com修改为您证书绑定的域名，例如：www.example.com。
     rewrite ^(.*)$ https://$host$1 permanent;   #将所有HTTP请求通过rewrite重定向到HTTPS。
      location / {
