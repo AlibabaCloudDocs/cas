@@ -17,13 +17,13 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
 
 ## 步骤1：下载证书到本地
 
-1.  登录阿里云[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=cas)。
+1.  登录[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=cas)。
 
-2.  在**概览**页面上方，单击**已签发**统计区域下的数字。
+2.  在**概览**页面，单击证书列表上方的证书状态下拉列表，并选择**已签发**。
 
-    ![已签发](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/6595857061/p190727.png)
+    ![已签发](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1094018061/p201523.png)
 
-    该操作将会筛选出所有已签发的证书。您只可以将已签发的证书下载到本地。
+    该操作将会筛选出所有已经通过CA机构签发的证书。
 
 3.  定位到要下载的证书，单击操作列下的**下载**。
 
@@ -136,6 +136,8 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
         }
         ```
 
+        **警告：** 如果您使用的是阿里云ECS服务器，必须在[ECS管理控制台](https://ecs.console.aliyun.com)的**安全组**页面，配置放行80端口和443端口，否则网站访问可能出现异常。关于如何配置安全组，请参见[添加安全组规则](/cn.zh-CN/安全/安全组/添加安全组规则.md)。
+
     5.  修改完成后，按Esc键、输入:wq！并按Enter键，保存修改后的配置文件并退出编辑模式。
 
 5.  执行以下命令，重启Nginx服务。
@@ -211,17 +213,24 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
 
 ## 步骤3：验证是否安装成功
 
-证书安装完成后，您可通过登录证书的绑定域名验证该证书是否安装成功。
+证书安装完成后，您可通过访问证书的绑定域名验证该证书是否安装成功。
 
 ```
-https://domain name   #domain name替换成证书绑定的域名。
+https://yourdomain.com   #需要将yourdomain.com替换成证书绑定的域名。
 ```
 
-如果网页地址栏出现小锁标志，表示证书安装成功。
+如果网页地址栏出现小锁标志，表示证书已经安装成功。
 
-DV SSL、OV SSL数字证书部署在服务器上后，您的浏览器访问网站时，展示以下效果：
+不同类型证书安装成功后的效果不同，具体如下：
 
-![DV/OV证书安装效果图](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9328588951/p108043.png)
+-   DV SSL、OV SSL数字证书部署在服务器上后，您的浏览器访问网站时，将会展示以下效果。
+
+    ![DV/OV证书安装效果图](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7614018061/p108043.png)
+
+-   EV SSL数字证书部署在服务器上后，您的浏览器访问网站时，将会展示以下效果。
+
+    ![EV证书安装效果图](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/7614018061/p108044.png)
+
 
 如果验证时出现访问异常，请参照下表进行排查。
 
@@ -232,7 +241,7 @@ DV SSL、OV SSL数字证书部署在服务器上后，您的浏览器访问网�
 关于如何配置安全组，请参见[添加安全组规则](/cn.zh-CN/安全/安全组/添加安全组规则.md)。
 
 -   如果您使用的不是阿里云ECS服务器，请参照对应的服务器安全设置指南，配置开放服务器的443端口。 |
-|收到网站提示“您与网站之间的连接未完全安全”。|您的网站代码中调用的是HTTP协议。|您需要在网站代码中把HTTP协议修改为HTTPS协议。**说明：** 不同网站代码的实现逻辑可能存在差异，请您根据具体情况进行修改。如果需要更多支持，请提交[工单](https://selfservice.console.aliyun.com/ticket)。 |
+|收到网站提示“您与网站之间的连接未完全安全”。|您的网站代码中调用的是HTTP协议。|您需要在网站代码中把HTTP协议修改为HTTPS协议。**说明：** 不同网站代码的实现逻辑可能存在差异，请您根据具体情况进行修改。如果需要更多支持，请提交[工单](https://selfservice.console.aliyun.com/ticket/category/cas)。 |
 |收到网站提示“该网站未根据工信部相关法律进行备案”。|-   您的网站未完成备案，未在接入商处完成备案接入。
 -   您的网站内容与备案信息不符、备案信息不准确、网站存在不适宜传播的内容等。
 
