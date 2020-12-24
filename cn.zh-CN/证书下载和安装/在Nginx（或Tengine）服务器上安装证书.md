@@ -49,12 +49,12 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
 
         ![CSR生成方式](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1690497061/p199706.png)
 
-6.  在Ngnix服务器上安装证书。
+6.  在Nginx服务器上安装证书。
 
-    根据您是否使用独立的Ngnix服务器，安装证书的操作不同：
+    根据您是否使用独立的Nginx服务器，安装证书的操作不同：
 
     -   如果您使用的是独立服务器，请参见[步骤2：（可选）在Nginx独立服务器上安装证书](#section_ydh_4qb_1gb)。
-    -   如果您使用的是虚拟主机，请参见[步骤2：（可选）为Ngnix虚拟主机配置SSL证书](#section_wy0_022_q1s)。
+    -   如果您使用的是虚拟主机，请参见[步骤2：（可选）为Nginx虚拟主机配置SSL证书](#section_wy0_022_q1s)。
 
 ## 步骤2：（可选）在Nginx独立服务器上安装证书
 
@@ -73,7 +73,7 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
 
     **说明：** 如果您在申请证书时将**CSR生成方式**设置为**手动填写**，请将您手动创建的证书密钥文件上传到/usr/local/nginx/conf/cert目录。
 
-4.  编辑Ngnix配置文件（nginx.conf），修改与证书相关的配置内容。
+4.  编辑Nginx配置文件（nginx.conf），修改与证书相关的配置内容。
 
     1.  执行以下命令，打开配置文件。
 
@@ -147,7 +147,7 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
     ./nginx -s reload  #重新载入配置文件。
     ```
 
-    如果重启Ngnix服务时收到报错，您可以使用以下方法进行排查：
+    如果重启Nginx服务时收到报错，您可以使用以下方法进行排查：
 
     -   收到`the "ssl" parameter requires ngx_http_ssl_module`报错：您需要重新编译Nginx并在编译安装的时候加上`--with-http_ssl_module`配置。
     -   收到`"/cert/3970497_pic.certificatestests.com.pem":BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/cert/3970497_pic.certificatestests.com.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)`报错：您需要去掉证书相对路径最前面的`/`。例如，您需要去掉`/cert/cert-file-name.pem`最前面的`/`，使用正确的相对路径`cert/cert-file-name.pem`。
@@ -156,7 +156,7 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
     具体操作，请参见[步骤3：验证是否安装成功](#section_liy_o8x_gug)。
 
 
-## 步骤2：（可选）为Ngnix虚拟主机配置SSL证书
+## 步骤2：（可选）为Nginx虚拟主机配置SSL证书
 
 1.  登录您的虚拟机。
 
