@@ -1,39 +1,35 @@
 # Revoke certificates
 
-You can apply to revoke a certificate in the SSL Certificate console for security purposes, or when you no longer need it.
+You can revoke the certificates that you no longer need or that pose security risks in the SSL Certificates Service console.
 
-**Revoke Certificate** allows you to deregister an issued certificate from the CA. After a certificate is revoked, it is no longer valid for encryption or trustworthy for browsers. Alibaba Cloud SSL Certificates Service allows you to revoke certificates issued by Alibaba Cloud. Uploaded third-party certificates cannot be revoked.
+**Revoke Certificate** allows you to deregister an issued certificate from the CA. After a certificate is revoked, it is no longer valid for encryption or trustworthy for browsers. Alibaba Cloud SSL Certificates Service allows you to revoke the certificates issued by Alibaba Cloud. Third-party certificates that are uploaded to the SSL Certificates Service console cannot be revoked.
 
-**Note:** After a certificate revocation application is submitted, you cannot view or download the certificate in the SSL Certificate console.
+**Note:** After you submit a certificate revocation request, you cannot view or download the certificate in the SSL Certificates Service console.
 
-You can only delete revoked SSL certificates in the SSL Certificate console, but cannot delete issued SSL certificates which are not revoked. For the differences between revocation and deletion, see [What is the difference between revoking a certificate and deleting a certificate?](/intl.en-US/Manage the certificates/FAQ/What is the difference between revoking a certificate and deleting a certificate?.md)
+You can delete revoked certificates from the SSL Certificates Service console. You cannot delete issued certificates that are not revoked. For more information about the differences between revocation and deletion, see [What is the difference between revoking a certificate and deleting a certificate?](/intl.en-US/Manage the certificates/FAQ/What is the difference between revoking a certificate and deleting a certificate?.md)
 
 **Note:**
 
--   If you require refunds for issued certificates, you must revoke the certificates within 30 calendar days after the certificates have been issued. Otherwise, refunds cannot be issued. No refund will be issued for a certificate that is **issued over 30 calendar days** or whose **revocation process cannot be completed within 30 calendar days after the issuance of the certificate**.
--   It takes up to five business days for the certification authority \(CA\) to process a certificate revocation application. If you need to revoke a certificate and apply for a refund, apply for the revocation in the Alibaba Cloud SSL Certificate console **at least five business days in advance**, within 30 calendar days after the certificate is issued. If you do not reserve enough revocation processing time, your certificate may be in effect more than 30 calendar days after it was issued and a refund cannot be made.
+-   If you want to claim a refund for an issued certificate, you must request revocation for the certificate and complete the revocation process within 28 calendar days after the certificate is issued. Otherwise, the refund cannot be claimed. You cannot claim a refund for a certificate **28 calendar days after it is issued** or for a certificate **that is not revoked within 28 calendar days after it is issued**.
+-   Certificate authorities \(CAs\) can process a certificate revocation request within a maximum of 5 business days. If you want to revoke a certificate and claim a refund, you must submit the certificate revocation request in the Alibaba Cloud SSL Certificates console 28 calendar days the 28 calendar days elapse. Otherwise, the revocation request may fail to be approved in time, and the refund request will be rejected.
 
 ## Procedure
 
-1.  Log on to the [SSL Certificates Service console](https://yundunnext.console.aliyun.com/?p=cas).
-
-2.  In the left-side navigation pane, click **Overview**.
-
-3.  On the SSL Certificates page, find the certificate to be revoked in the Signed certificate list, and click **revoke**.
+1.  On the Overview page, find the certificate that you want to revoke and click **Revoke**.
 
     ![Revoke](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8700955951/p39609.png)
 
-4.  On the Revoke Certificate page, select the revocation cause and click **Confirm**.
+2.  In the Revoke Certificate panel, specify Revocation Cause and click **OK**.
 
-5.  In the dialog box that appears, click **OK**.
+3.  In the message that appears, click **OK**.
 
-6.  Complete the email confirmation.
+4.  Complete the email confirmation.
 
-    After you submit an application for certificate revocation, the CA will send you a confirmation email to the **Applicant's Email Address**. Check the email in time and confirm the revocation of certificates.
+    After you submit the revocation request, the CA sends a confirmation email to the address that you specified for **Applicant's Email Address**. You must check for the email and confirm the revocation activity promptly.
 
-    **Note:** After you submit an application for certificate revocation, you will receive a confirmation email for OV and EV certificates sent from the CA. An application for DV certificate revocation does not require email confirmation.
+    **Note:** CAs send confirmation emails only for OV and EV certificates. If you want to revoke DV certificates, the CAs do not send confirmation emails.
 
-    After you complete the email confirmation, the certificate is revoked successfully.
+    After you complete the email confirmation, the certificate is revoked.
 
 
 ## References
