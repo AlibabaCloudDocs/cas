@@ -1,33 +1,33 @@
-# 资产中心
+# Asset Discovery
 
-资产中心页面为您展示了您已部署了阿里云SSL证书的网站的相关信息。
+The Asset Discovery page displays information about the websites where you have deployed Alibaba Cloud SSL certificates.
 
-您为网站成功部署了SSL证书后，资产中心页面会为您集中展示所有已部署了SSL证书的网站信息、所部署的证书类型和证书的有效期。
+After you deploy an SSL certificate for a website, the Asset Discovery page displays the information about the website, the type of the certificate, and the validity period of the certificate.
 
-![资产中心](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8745329061/p100363.png)
+![资源中心界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/5740789851/p107746.png)
 
-## 首次启用授权
+## Authorization for first use
 
-您首次启用资产中心功能时，需完成允许SSL证书服务访问您网站资源的授权。
+If this is the first time that you use the Asset Discovery feature, you must authorize SSL Certificates Service to access your website resources.
 
-![首次授权](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4630329061/p100429.png)
+![Authorization for first use](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6502239061/p100429.png)
 
-授权流程：
+The authorization procedure is as follows:
 
-1.  在资产中心页面单击**启用**。
-2.  在云资源访问授权页面单击**同意授权**。
+1.  Log on to the SSL Certificates console. In the left-side navigation pane, click Asset Discovery. On the page that appears, click **Enable** below the prompt message.
+2.  On the Cloud Resource Access Authorization page, click **Confirm Authorization Policy**.
 
-## 相关操作
+## What to do next
 
-您可在[阿里云SSL证书控制台](https://yundunnext.console.aliyun.com/?p=cas)资产中心页面进行以下操作：
+You can also perform the following operations on the Asset Discovery page:
 
--   单击资产中心列表左侧的![展开符号](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/1425329061/p100365.png)展开一级域名网站相关的所有其他级别的域名，查看对应的网站部署的SSL证书基本信息，包括**网站名称**、证书的**协议状态**、**证书品牌**、证书的**到期时间**。
--   对**协议状态**为**HTTP**的网站，购买SSL证书并开启HTTPS服务。
+-   In the asset list, click the ![Show icon](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6502239061/p100365.png) icon next to a base domain to show all the subdomains of the base domain and view the basic information of the SSL certificates that are deployed for these subdomains. The system displays **Domain**, **Protocol**, **SSL certificate**, and **Expire On**, which indicate the website name, certificate protocol, certificate type, and certificate expiration time, respectively.
+-   If a website has **Protocol** set to **HTTP**, purchase an SSL certificate and enable the HTTPS service for the website.
 
-    网站的**协议状态**如果展示为**HTTP**，说明该网站还没有部署SSL证书，因此无法通过HTTPS协议加密网站传输数据。
+    The value **HTTP** of **Protocol** indicates that no SSL certificates are deployed for the website, and the HTTPS protocol cannot be used to encrypt data transmission for the website.
 
--   查看证书的有效期。如果有证书即将到期，请及时续费。
+-   Check the validity period of an SSL certificate. If a certificate is due to expire, we recommend that you renew the subscription in a timely manner.
 
-    详细内容请参见[到期续费](/intl.zh-CN/产品定价/到期续费.md)。
+    For more information, see [Renewal upon expiration](/intl.en-US/Product pricing/Renewal upon expiration.md).
 
 
