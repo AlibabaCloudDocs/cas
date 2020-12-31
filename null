@@ -1,33 +1,51 @@
-# Asset Discovery
+# 一键式HTTPS计费方式
 
-The Asset Discovery page displays information about the websites where you have deployed Alibaba Cloud SSL certificates.
+一键式HTTPS服务支持包年（预付费）计费模式。
 
-After you deploy an SSL certificate for a website, the Asset Discovery page displays the information about the website, the type of the certificate, and the validity period of the certificate.
+## 计费项
 
-![资源中心界面](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/5740789851/p107746.png)
+按所选购的套餐版本计费。一键式HTTPS支持基础版、专业版和企业版3个套餐版本。
 
-## Authorization for first use
+|基本配置|基础版|专业版|企业版|
+|----|---|---|---|
+|每天业务访问网络流量（QPS） **说明：** 网站QPS指的是当日00:00:00到23:59:59之间访问该网站的每秒请求数。
 
-If this is the first time that you use the Asset Discovery feature, you must authorize SSL Certificates Service to access your website resources.
+|10 QPS/天|30 QPS/天|100 QPS/天|
+|支持的证书类型|-   GeoTrust DV通配符证书
+-   Digicert DV通配符证书
+-   已有证书（已购买的证书和保有的第三方证书）
 
-![Authorization for first use](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6502239061/p100429.png)
+|-   GeoTrust DV通配符证书
+-   Digicert DV通配符证书
+-   已有证书（已购买的证书和保有的第三方证书）
 
-The authorization procedure is as follows:
+|-   GeoTrust DV通配符证书
+-   Digicert DV通配符证书
+-   已有证书（已购买的证书和保有的第三方证书） |
+|购买时长|仅支持购买1年。|仅支持购买1年。|仅支持购买1年。|
 
-1.  Log on to the SSL Certificates console. In the left-side navigation pane, click Asset Discovery. On the page that appears, click **Enable** below the prompt message.
-2.  On the Cloud Resource Access Authorization page, click **Confirm Authorization Policy**.
+**说明：** 如果您的网站实际QPS超过套餐内最大QPS，建议您尽快通过升级套餐的方式解决该问题，避免出现网站被限速的情况。更多信息请参见[网站QPS超过套餐内最大QPS后怎么办？](/cn.zh-CN/一键式HTTPS/常见问题/网站QPS超过套餐内最大QPS后怎么办？.md)
 
-## What to do next
+## 付费方式
 
-You can also perform the following operations on the Asset Discovery page:
+目前一键式HTTP仅支持包年购买（预付费，只可购买1年）。
 
--   In the asset list, click the ![Show icon](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6502239061/p100365.png) icon next to a base domain to show all the subdomains of the base domain and view the basic information of the SSL certificates that are deployed for these subdomains. The system displays **Domain**, **Protocol**, **SSL certificate**, and **Expire On**, which indicate the website name, certificate protocol, certificate type, and certificate expiration time, respectively.
--   If a website has **Protocol** set to **HTTP**, purchase an SSL certificate and enable the HTTPS service for the website.
+## 计费周期
 
-    The value **HTTP** of **Protocol** indicates that no SSL certificates are deployed for the website, and the HTTPS protocol cannot be used to encrypt data transmission for the website.
+按年计费，购买时生成账单计费。
 
--   Check the validity period of an SSL certificate. If a certificate is due to expire, we recommend that you renew the subscription in a timely manner.
+## 扣费周期
 
-    For more information, see [Renewal upon expiration](/intl.en-US/Product pricing/Renewal upon expiration.md).
+自购买当日起，根据所选择的购买时长（年）计算。购买时长只可选择1年。
 
+## 到期说明
+
+当您购买的防护服务到期时，服务自动停止。
+
+-   距离服务到期前7天，您会收到短信或邮件，提醒您服务即将到期并提示您及时续费。如果在服务到期前没有续费，则在服务到期时您的网站将失去HTTPS防护效果。
+-   服务到期后，一键式HTTPS中的配置将为您继续保留7天。如果7天内您完成续费则可以使用原有配置继续进行服务；如果没有在7天内完成续费，您的现有配置将被释放。您只能重新购买一键式HTTPS服务，并重新完成配置，才能继续使用一键式HTTPS防护服务。
+
+## 退款说明
+
+一站式HTTPS服务支持5天无理由退款，申请退款后退款金额会全额退还。有关一键式HTTPS服务退款的详细内容，请参见[一键式HTTPS退款说明](/cn.zh-CN/计量计费/一键式HTTPS退款说明.md)。
 
