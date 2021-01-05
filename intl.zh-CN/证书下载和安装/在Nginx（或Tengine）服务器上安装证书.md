@@ -127,7 +127,7 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
         server {
             listen 80;
             server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。
-            rewrite ^ (. * ) $ https://$host$1 permanent; #将所有HTTP请求通过rewrite指令重定向到HTTPS。
+            rewrite ^(.*)$ https://$host$1 #将所有HTTP请求通过rewrite指令重定向到HTTPS。
             location / {
                 index index.html index.htm;
             }
