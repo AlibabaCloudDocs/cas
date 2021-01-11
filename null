@@ -1,23 +1,37 @@
-# 步骤一：填写证书申请信息
+# Step 2: Wait for review to complete
 
-本文档介绍了证书申请的详细内容。
+This topic describes the operations that you need to perform after you submit a certificate application for review.
 
-完成SSL证书购买和支付后，您还需完成证书的申请、验证和审核。证书审核通过并签发后，您才可获取并使用SSL证书。
+After entering all the requested information, uploading verification materials, and submitting your certificate application for review, you need to promptly confirm the verification email sent by the corresponding certificate authority \(CA\).
 
-**说明：** 证书到期前，续费购买同一型号的证书并再次提交申请时，系统会自动填充您上次提交的申请信息和资料；续费申请证书时审核流程不会缩短。相关内容请参见[到期续费](/intl.zh-CN/产品定价/到期续费.md)。
+After you submit your certificate application for review, Alibaba Cloud will verify the corresponding qualification after receiving the information that you have submitted for review. The time required for this process varies with the requirements of different CAs. Therefore, we recommend that you regularly check your email and phone for relevant notifications. **Timely reply** will **effectively reduce** the verification time for your certificate.
 
-## 操作步骤
+After submitting the certificate application for review, you also need to perform the following operations:
 
-1.  在**概览**页面，定位到需要申请签发的证书，单击**证书申请**。
+1.  \(Required\) Complete domain name verification through the verification email sent by the CA to you.
 
-2.  在证书申请页面，完整填写证书的申请信息。
+    **Note:** After you submit the certification application for review, the CA will send you a verification email. You must follow these steps to complete the domain name verification. If you do not complete the domain name verification, you will not be able to pass the certificate application review and your certificate application will remain in the **Application Review** status.
 
-3.  单击**下一步**，进入**验证信息**页面。
+    ![Verification process](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9115585751/p6087.jpg)
 
-4.  在**验证信息**模块，按照提示要求准备证书的验证材料。
+2.  If your certificate application fails to pass the verification, the reason for this failure will be displayed in your order \(if applicable\). You need to modify the corresponding application information, especially the enterprise qualification information submitted for review, as prompted, and then resubmit the certificate application for review.
+3.  \(Optional\) After your certificate application has passed the verification, select **Application Review** from the Certificate Status drop-down list on the homepage of the Alibaba Cloud SSL Certificates console to view the **expected date of issue**, certificate type, and bound domain of the certificate for which you have submitted an application.
 
-5.  单击**上传文件**，按要求上传验证材料。
+    **Note:** To modify your application information, you can withdraw your application and modify the information **before the certificate is issued**. You cannot withdraw the application after the certificate is issued.
 
-6.  单击**提交审核**。成功提交审核后，系统会提示您证书申请已提交，请仔细阅读。
 
+The entire certificate application process is completed only after you enter the certificate application information, complete the verification, submit the certificate application for review, and confirm the verification email from the CA.
+
+After the certificate application is reviewed, the CA will issue a certificate to you. You can download this issued certificate and install it on your server.
+
+For more information about certificate installation, see the following documents:
+
+-   [Install SSL certificates on Tomcat servers](/intl.en-US/Install Certificates/Install SSL certificates in Tomcat servers/Install .pfx SSL certificates.md)
+-   [Install SSL certificates on Apache servers](/intl.en-US/Install Certificates/Install SSL certificates on Apache servers.md)
+-   [Deploy SSL certificate on Ubuntu Apache2](/intl.en-US/Best Practices/Deploy SSL certificate on Ubuntu Apache2.md)
+-   [How do I deploy the issued certificate in Apache server]()
+-   [Install an SSL certificate on an NGINX or Tengine server](/intl.en-US/Install Certificates/Install an SSL certificate on an NGINX or Tengine server.md)
+-   [Install SSL certificates in IIS servers](/intl.en-US/Install Certificates/Install SSL certificates in IIS servers.md)
+-   [Deploy SSL certificates on CentOS-based Tomcat 8.5 or 9.0](/intl.en-US/Best Practices/Deploy SSL certificates on CentOS-based Tomcat 8.5 or 9.0.md)
+-   [An SSL certificate is configured by the jetty server](/intl.en-US/Install Certificates/An SSL certificate is configured by the jetty server.md)
 
