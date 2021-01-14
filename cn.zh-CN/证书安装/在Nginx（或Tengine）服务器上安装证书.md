@@ -6,7 +6,7 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
 
 通过SSL证书服务购买和签发证书后，您可以将已签发的证书下载并安装到Nginx（或Tengine）服务器上。本文介绍了下载SSL证书并在Nginx（或Tengine）服务器上安装证书的具体操作。
 
--   已经通过SSL证书服务完成证书签发。更多信息，请参见[步骤一：填写证书申请信息](/cn.zh-CN/证书申请和提交审核/申请和提交审核流程/步骤一：填写证书申请信息.md)。
+-   已经通过SSL证书服务完成证书签发。更多信息，请参见[步骤一：填写证书申请信息](/cn.zh-CN/证书申请/申请和提交审核流程/步骤一：填写证书申请信息.md)。
 -   已准备好远程登录工具（例如PuTTY、Xshell），用于登录您的Web服务器。
 
 本文以CentOS 8操作系统、Nginx 1.14.1服务器系统为例进行说明。由于服务器系统版本不同，您在操作过程中使用的命令可能会略有区别。
@@ -129,7 +129,7 @@ keyword: [SSL证书, Nginx服务器, Tengine服务器, 支持HTTPS]
         server {
             listen 80;
             server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。
-            rewrite ^(.*)$ https://$host$1 #将所有HTTP请求通过rewrite指令重定向到HTTPS。
+            rewrite ^(.*)$ https://$host$1; #将所有HTTP请求通过rewrite指令重定向到HTTPS。
             location / {
                 index index.html index.htm;
             }
