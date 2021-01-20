@@ -85,7 +85,7 @@ In this example, the certificate name is *cert-file-name*. Therefore, the CA cer
 
     3.  Find the HTTP settings that are enclosed in `http{}` in the configuration file. Then, add the following server configurations or modify the existing server configurations based on the comments:
 
-        The following code is only for reference. You must replace the variables with actual values.
+        The following code is for reference only. You must replace the variables with actual values.
 
         -   `yourdomain.com`: Replace it with the domain name that is bound to your certificate.
 
@@ -121,13 +121,13 @@ In this example, the certificate name is *cert-file-name*. Therefore, the CA cer
 
         To redirect all HTTP requests to HTTPS, you can append the `rewrite` configuration item to the domain name of the HTTP website.
 
-        The following code is only for reference. You must replace `yourdomain.com` with the domain name that is bound to your certificate.
+        The following code is for reference only. You must replace `yourdomain.com` with the domain name that is bound to your certificate.
 
         ```
         server {
             listen 80;
             server_name yourdomain.com; # Replace yourdomain.com with the domain name that is bound to your certificate.
-            rewrite ^ (. * ) $ https://$host$1 permanent; # Redirect all HTTP requests to HTTPS.
+            rewrite ^(.*)$ https://$host$1; # Redirect all HTTP requests to HTTPS.
             location / {
                 index index.html index.htm;
             }
