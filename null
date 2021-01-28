@@ -1,27 +1,27 @@
-# 吊销、删除证书分别有什么限制条件？
+# What are the limits to revoke or delete a certificate?
 
-阿里云SSL证书服务支持吊销已签发的证书和删除已过期或已吊销的证书。证书吊销指将已经签发的证书从签发机构处注销；证书吊销后将失去加密效果，不再被浏览器信任。证书删除指将已吊销的证书资源从阿里云系统中删除。
+Alibaba Cloud SSL Certificates Service allows you to revoke issued certificates and delete expired or revoked certificates. If you revoke a certificate, it is deregistered from the certificate authority \(CA\). After a certificate is revoked, it can no longer be used for encryption or used to verify trusted websites. If you delete a certificate, its resources are deleted from Alibaba Cloud SSL Certificates Service.
 
-## 什么情况下需要使用证书吊销？证书吊销有什么限制条件？
+## When do I need to revoke a certificate? What are the limits to revoke a certificate?
 
-您可能会在以下场景下需要吊销证书：
+You may need to revoke a certificate in the following scenarios:
 
--   证书申请信息填写错误，但是证书已签发，需要重新提交证书申请信息。
--   证书已签发，但是需要更换证书绑定的域名。
--   已无需使用该证书。
--   出于安全因素考虑，不再使用该证书。
+-   The information that you specified to apply for a certificate is not correct, but the certificate is issued. In this case, you must revoke the certificate before you can resubmit the application with the correct information.
+-   A certificate is issued, but the domain names bound to the certificate need to be replaced.
+-   You no longer need a certificate.
+-   For security reasons, a certificate is no longer used.
 
-证书吊销无限制条件，您可在任何时候申请吊销证书。具体操作，请参见[吊销证书](/intl.zh-CN/证书吊销/吊销证书.md)。
+No limits are imposed to revoke a certificate. You can place a revocation request at all times. For more information, see [Revoke certificates](/intl.en-US/Revoke Certificates/Revoke certificates.md).
 
-收费证书在签发后的30天内完成吊销（提交了吊销申请并完成吊销审核）可全额退款，超过30天完成吊销不退款。
+If you complete the revocation process for a paid certificate within 30 days after the certificate is issued, you can claim a full refund for the certificate. If you complete the process after 30 days, you cannot claim a refund for the certificate. The certification revocation process is considered complete only after the revocation request is submitted and approved.
 
-**说明：** 证书吊销后将失去加密效果，请谨慎吊销。
+**Note:** A revoked certificate can no longer be used for encryption. Proceed with caution.
 
-## 证书删除有什么限制条件？
+## What are the limits to delete a certificate?
 
-证书删除有以下限制条件：
+Take not of the following limits:
 
--   未过期的证书只有在吊销后才可删除。
--   已过期的证书可以随时删除。
--   手动上传的证书只有在已过期后才可删除。
+-   If a certificate does not expire, you cannot delete it until it is revoked.
+-   If a certificate expires, you can delete it at all times.
+-   If a certificate is manually deleted, you cannot delete it until it expires.
 
