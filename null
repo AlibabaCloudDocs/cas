@@ -1,17 +1,124 @@
-# 使用前必读
+# Console overview
 
-在使用阿里云SSL证书服务前请仔细阅读本文档。
+This topic provides an overview of operations on Alibaba Cloud SSL Certificates Service and the main modules of its console.
 
-## 证书选购注意事项
+You can manage and perform operations on certificates in the Alibaba Cloud SSL Certificates console as follows:
 
-在使用阿里云SSL证书服务选购证书时，有以下限制：
+-   [Select and purchase certificates](/intl.en-US/Buy Certificates/Select and purchase certificates.md)
+-   [t13563.md\#section\_x1o\_2jq\_ttn](/intl.en-US/Product Pricing/Refund instructions.md) and the status of a certificate
+-   View the period of validity and status of a certificate.
+-   Manage certificates:
+    -   [Upload certificates](/intl.en-US/Upload Certificates/Upload certificates.md) to the console for unified management
+    -   [Apply for certificate issuance](/intl.en-US/Issue Certificates/Application process/Apply for and validate certificates.md) or revoke certificate application
+    -   Deploy an issued certificate [to an Alibaba Cloud product](/intl.en-US/Install Certificates/Deploy certificates on Alibaba Cloud services.md)
+    -   Download [and install an issued certificate to other servers](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates in Tomcat servers/Install .pfx SSL certificates.md)
+    -   Delete or [Revoke certificates](/intl.en-US/Revoke and Delete Certificates/Revoke certificates.md)
+-   [Renewal upon expiration](/intl.en-US/Refund/Renewal upon expiration.md)
 
--   暂时只支持两种服务器证书（专业、高级），每种服务器证书所对应的CA中心可能有不同产品（或者不提供相应证书），您可按照您的需求进行选择。
--   证书申请时的密钥加密位数至少为RSA 2048（公钥长度需大于或等于2048位），哈希签名算法至少SHA 256（哈希签名长度大于或等于256位）。如需手动生成CSR文件时，请您依据该限制条件制作CSR文件。
+**Note:** If you urgently need to install, verify, and quickly review a certificate, you can log on to the SSL Certificates Service console, select the desired security service in the **Security Service** section on the right side, and click **Consult now** to purchase the corresponding value-added service. The Customer Services team will help resolve your problems.
 
-## 证书申请注意事项
+![Security Service](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1205843851/p40306.png)
 
-申请证书前请先了解申请各类型证书需要提交的审核资料。
+## Console layout modes
 
-根据CA中心的要求，申请证书时需要您提供您域名所属企业的真实合法的验证材料，阿里云会将这些材料提交至CA中心进行审核。审核过程中，CA中心会直接通过邮件或者电话的方式联系您。
+The Alibaba Cloud SSL Certificates console supports two layout modes. You can click either of the layout icons at the top of the console to select the desired layout mode.
+
+![Layout modes](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1205843851/p33494.png)
+
+![Layout](../images/p63369.png)
+
+-   Card view
+
+    ![Card view](../images/p63370.png)
+
+    ![Card view](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1205843851/p33412.png)
+
+-   List view
+
+    ![Certificate list](../images/p63371.png)
+
+    ![List view](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1205843851/p33413.png)
+
+
+## Purchase SSL Certificates Service
+
+In the SSL Certificates Service console, click **Purchase Certificate** to purchase the desired certificate. For more information, see [Select and purchase certificates](/intl.en-US/Buy Certificates/Select and purchase certificates.md).
+
+![Purchase a certificate](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2205843851/p33282.png)
+
+![Purchase a certificate](../images/p63373.png)
+
+## View the status of a certificate
+
+You can view the status of your certificate in the SSL Certificates Service console.
+
+![View the status of a certificate](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2205843851/p33287.png)
+
+![View the status of a certificate](../images/p63375.png)
+
+The certificate statuses are as follows:
+
+-   **Not issued:** The certificate has been paid and will be issued after application and review. The certificate can be used only after it is issued.
+    -   Paid: The certificate has been paid and is to be applied for.
+    -   Application review: The certificate has been applied for and is to be verified.
+    -   Refund: The certificate has been refunded.
+-   **Issued:** The certificate has been paid, applied for, and reviewed. You can deploy the certificate to your Alibaba Cloud product or download or delete the certificate.
+    -   Expired: The certificate has expired. You need to repurchase and apply for a new one to safeguard your website.
+    -   Revoked: The issued certificate has been revoked from the certificate authority.
+
+## Manage certificates
+
+After the SSL certificates are reviewed, you can manage all your certificates in the SSL Certificates Service console. You can view the status and validity period of a certificate, upload other certificates to the console, delete a certificate, and revoke a certificate.
+
+-   **Upload a certificate:** You can upload your other certificates to the console and manage all the certificates in a unified manner.
+
+    ![Upload a certificate](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2205843851/p33311.png)
+
+    ![Upload a certificate](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2205843851/p63376.png)
+
+-   **Submit or cancel certificate application:** You can apply for a purchased certificate or cancel the application for a purchased certificate.
+
+    ![Cancel certificate application](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2205843851/p33314.png)
+
+    ![Cancel certificate application](../images/p63396.png)
+
+    **Note:** Certificate application cannot be canceled after the certificate is issued.
+
+-   **Deploy a certificate to an Alibaba Cloud product:** You can deploy an issued certificate to an Alibaba Cloud product.
+
+    ![Deploy a certificate to an Alibaba Cloud product](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2205843851/p33316.png)
+
+    ![Deploy a certificate](../images/p63401.png)
+
+-   **Download a certificate:** You can download and install an issued certificate to your web server.
+
+    ![Download a certificate](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/3205843851/p33344.png)
+
+-   **Delete or revoke a certificate:** You can delete or revoke a certificate that has been issued and are no longer in use.
+
+    ![Delete or revoke a certificate](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/3205843851/p33346.png)
+
+    **Note:**
+
+    -   Deleted certificates cannot be restored.
+    Deleted certificates cannot be restored.
+
+
+## References
+
+Certificate installation:
+
+-   [Install SSL certificates on Tomcat servers](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates in Tomcat servers/Install .pfx SSL certificates.md)
+-   [Install SSL certificates on Apache servers](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on Apache servers.md)
+-   [Deploy SSL certificate on Ubuntu Apache2](/intl.en-US/Best Practices/Deploy SSL certificate on Ubuntu Apache2.md)
+-   [How do I deploy the issued certificate in Apache server]()
+-   [Install an SSL certificate on an NGINX or Tengine server](/intl.en-US/Install Certificates/Install certificates to servers/Install an SSL certificate on an NGINX or Tengine server.md)
+-   [Install SSL certificates in IIS servers](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates in IIS servers.md)
+-   [Deploy SSL certificates on CentOS-based Tomcat 8.5 or 9.0](/intl.en-US/Best Practices/Deploy SSL certificates on CentOS-based Tomcat 8.5 or 9.0.md)
+-   [An SSL certificate is configured by the jetty server](/intl.en-US/Install Certificates/Install certificates to servers/An SSL certificate is configured by the jetty server.md)
+
+FAQ:
+
+-   [t1475823.md\#]()
+-   [t1513210.md\#]()
 
