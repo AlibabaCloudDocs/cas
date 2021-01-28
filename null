@@ -1,12 +1,27 @@
-# How do I set the TLS version of my certificate?
+# 吊销、删除证书分别有什么限制条件？
 
-Supported TLS versions are TLSv1.0, TLSv1.1, and TLSv1.2. You can set the TLS version on your Alibaba Cloud services and web servers as required.
+阿里云SSL证书服务支持吊销已签发的证书和删除已过期或已吊销的证书。证书吊销指将已经签发的证书从签发机构处注销；证书吊销后将失去加密效果，不再被浏览器信任。证书删除指将已吊销的证书资源从阿里云系统中删除。
 
-If your certificate is installed on the following Alibaba Cloud services, set the TLS version by referring to the respective links:
+## 什么情况下需要使用证书吊销？证书吊销有什么限制条件？
 
--   SLB: [Manage TLS security policies](/intl.en-US/Classic Load Balancer/User Guide/Listeners/Manage TLS security policies.md)
--   CDN: [Configure TLS](/intl.en-US/Domain Management/HTTPS/Configure TLS.md)
--   DCDN: [Configure TLS]()
+您可能会在以下场景下需要吊销证书：
 
-If your certificate is installed on a web server, find `ssl_protocols TLSv1 TLSv1.1 TLSv1.2` in the certificate configuration file and modify the settings as required. For example, if you want to use TLSv1.1 and TLSv1.2 in your certificate, remove `TLSv1` from `ssl_protocols TLSv1 TLSv1.1 TLSv1.2`.
+-   证书申请信息填写错误，但是证书已签发，需要重新提交证书申请信息。
+-   证书已签发，但是需要更换证书绑定的域名。
+-   已无需使用该证书。
+-   出于安全因素考虑，不再使用该证书。
+
+证书吊销无限制条件，您可在任何时候申请吊销证书。具体操作，请参见[吊销证书](/intl.zh-CN/证书吊销/吊销证书.md)。
+
+收费证书在签发后的30天内完成吊销（提交了吊销申请并完成吊销审核）可全额退款，超过30天完成吊销不退款。
+
+**说明：** 证书吊销后将失去加密效果，请谨慎吊销。
+
+## 证书删除有什么限制条件？
+
+证书删除有以下限制条件：
+
+-   未过期的证书只有在吊销后才可删除。
+-   已过期的证书可以随时删除。
+-   手动上传的证书只有在已过期后才可删除。
 
