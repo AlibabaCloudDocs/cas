@@ -69,20 +69,14 @@ keyword: [阿里云证书, SSL证书, 退款, 全额退款]
 
     **说明：** 仅状态为**申请审核中**的证书才可以取消退款。
 
-    ![取消退款](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8274019951/p97650.png)
-
 -   **查看退款审核进度**
 
     提交退款申请后，您可在SSL证书控制台的退款列表中，查看退款审核的进度和状态。如果退款审核失败，您可在该页面查看到相关提示和说明。
-
-    ![退款状态](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9274019951/p132844.png)
 
 -   **查看证书的到期时间**
     -   **已签发证书**
 
         如果证书已签发，您可在证书列表中搜索**已签发**状态的证书，查看该证书的**到期时间**。
-
-        ![证书有效期时间](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9274019951/p101277.png)
 
     -   **未签发证书**
 
@@ -91,5 +85,5 @@ keyword: [阿里云证书, SSL证书, 退款, 全额退款]
 
 ## 相关文档
 
-[计费方式](/cn.zh-CN/计量计费/计费方式.md)
+[计费方式](/intl.zh-CN/产品定价/计费方式.md)
 
