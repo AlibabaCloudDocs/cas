@@ -35,8 +35,6 @@ After you purchase an **SSL Certificates Service \(One Year\)** certificate inst
     -   Organization Validation \(OV\) or Extended Validation \(EV\) SSL certificate: Click **Submit**.
     After you submit the certificate application, you will receive the following note. Keep the phone number of the contact reachable and check the verification email at the earliest opportunity as prompted. The CA sends the verification email to the email address of the contact.
 
-    ![Prompt to submit for review](../images/p211277.png)
-
 
 ## What to do next
 
