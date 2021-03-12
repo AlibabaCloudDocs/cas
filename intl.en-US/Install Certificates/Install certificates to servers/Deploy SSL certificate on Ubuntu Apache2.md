@@ -10,7 +10,7 @@ Web server: Apache2
 
 ## Prerequisites
 
--   The Apache server certificate is downloaded from the[Alibaba Cloud SSL certificate services console](https://yundunnext.console.aliyun.com/?spm=5176.2020520155.aliyun_sidebar.30.25af2a528ujbXD&p=cas#/overview/cn-hangzhou).
+-   The Apache server certificate is downloaded from the [Alibaba Cloud SSL certificate services console](https://yundunnext.console.aliyun.com/?spm=5176.2020520155.aliyun_sidebar.30.25af2a528ujbXD&p=cas#/overview/cn-hangzhou).
 -   Open SSL is installed.
 
 ## Steps
@@ -41,7 +41,7 @@ Web server: Apache2
 
     `vi /etc/apache2/sites-available/default-ssl.conf`
 
-    Indefault-ssl.conffile, find the following parameters and modify the parameters. After modification is complete, click `:wq` to save and exit.
+    In default-ssl.conf file, find the following parameters and modify the parameters. After modification is complete, click `:wq` to save and exit.
 
     ```
     <IfModules mod_ssl.c>
@@ -50,7 +50,7 @@ Web server: Apache2
     SSLCertificateFile /etc/apache2/ssl/www.YourDomainName_public.crt #replace/etc/apache2/ssl/www.YourDomainName.com_public.crt with certificate file path+certificate file name.
     SSLCertificateKeyFile /etc/apache2/ssl/www.YourDomainName.com.key  #replace/etc/apache2/ssl/www.YourDomainName.com.key with certificate key file path+certificate key file name.
     SSLCertificateChainFile /etc/apache2/ssl/www.YourDomainName.com_chain.crt  #replace/etc/apache2/ssl/www.YourDomainName.com_chain.crt with certificate chain file path+certificate chain file name.
-    						
+                            
     ```
 
     ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/93419/156447311436991_en-US.png)
