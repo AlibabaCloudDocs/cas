@@ -96,15 +96,9 @@ When you apply for a certificate, you must prepare the required materials, uploa
 -   example.aliyun2.com
 
 |5|1|One or two years|-|
-| |Professional OV and enhanced OV|The same brand must be selected for multiple certificates.|No limit. If you purchase multiple certificates, you must merge them into one certificate. Example: 
-
-|No limit|No limit|No limit|-|
-| |Professional OV and enhanced EV|DigiCert|No limit. SSL certificates must support the ECC algorithm. Example: 
-
-|No limit|No limit|No limit|-|
-| |Professional OV|GlobalSign|No limit. SSL certificates must support the ECC algorithm. Example: 
-
-|No limit|No limit|No limit|[Purchase link](https://common-buy.aliyun.com/?commodityCode=cas&request=%7B%22cer_type%22:%22personal%22,%22brand%22:%22globalsign%22,%22domain_type%22:%22all%22,%22domain_num%22:1,%22order_num%22:1,%22ord_time%22:%221:Year%22%7D)|
+| |Professional OV and enhanced OV|The same brand must be selected for multiple certificates.|No limit. If you purchase multiple certificates, you must merge them into one certificate.|No limit|No limit|No limit|-|
+| |Professional OV and enhanced EV|DigiCert|No limit. SSL certificates must support the ECC algorithm.|No limit|No limit|No limit|-|
+| |Professional OV|GlobalSign|No limit. SSL certificates must support the ECC algorithm.|No limit|No limit|No limit|[Purchase link](https://common-buy.aliyun.com/?commodityCode=cas&request=%7B%22cer_type%22:%22personal%22,%22brand%22:%22globalsign%22,%22domain_type%22:%22all%22,%22domain_num%22:1,%22order_num%22:1,%22ord_time%22:%221:Year%22%7D)|
 
 ## Brands of certificates supported by Alibaba Cloud
 
