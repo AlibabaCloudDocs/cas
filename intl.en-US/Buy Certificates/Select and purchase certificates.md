@@ -4,7 +4,7 @@ Alibaba Cloud SSL Certificates Service supports different brands and types of ce
 
 ## Procedure
 
-1.  Log on to the SSL Certificate console. On the SSL Certificates page, click [Purchase Certificate](https://common-buy.aliyun.com/?spm=5176.7968328.1266638.1.60301232UYWsTi&commodityCode=cas#/buy)[Purchase Certificate](https://common-buy-intl.aliyun.com/?commodityCode=cas_intl#/buy)[Purchase Certificate](https://common-buy-intl4service.aliyun.com/cas/prepay#/buy).
+1.  Log on to the SSL Certificate console. On the SSL Certificates page, click [Purchase Certificate](https://common-buy-intl.aliyun.com/?commodityCode=cas_intl#/buy).
 
 2.  Specify **Type of Domain** based on the domain names that you want to protect.
 
@@ -35,13 +35,11 @@ It protects all peer-level domain names of the wildcard domain name, such as 1.a
     |**Single Domain**|If you want to protect only one base domain name or one subdomain name \(non-wildcard domain name\), select **Single Domain**. This type of certificate protects the following domain names:     -   Base domain name
     -   Subdomain name
 |None|
-    |**Multiple Domain**|If you want to protect multiple domain names, such as different levels of subdomain names under the same base domain name or different base domain names with their subdomain names, select **Multiple Domain**.     -   A DigiCert Extended Validation \(EV\) SSL certificate protects a minimum of five domain names \(no more than 250no more than 100\).
-    -   Other types of SSL certificates can protect a minimum of three domain names \(no more than 250no more than 100\).
- Alibaba Cloud multi-domain certificates allow you to append domain names. However, you must enter at least three domain names when you apply for a certificate for the first time. Otherwise, you cannot append domain names later.
+    |**Multiple Domain**|If you want to protect multiple domain names, such as different levels of subdomain names under the same base domain name or different base domain names with their subdomain names, select **Multiple Domain**.     -   A DigiCert Extended Validation \(EV\) SSL certificate protects a minimum of five domain names \(no more than 100\).
+    -   Other types of SSL certificates can protect a minimum of three domain names \(no more than 100\).
+Alibaba Cloud multi-domain certificates allow you to append domain names. However, you must enter at least three domain names when you apply for a certificate for the first time. Otherwise, you cannot append domain names later.
 
- ![Enter more than three domain names when you apply for a multi-domain certificate](../images/p101204.png)
-
- Assume that you have purchased a multi-domain certificate to protect 10 domain names and that you entered three domain names in **Domains to Bind** and submitted the application for the certificate for the first time. If you want to protect more domain names, you only need to [Ticket](https://selfservice.console.aliyun.com/ticket/category/cas/today)[Ticket](https://workorder-intl.console.aliyun.com/#/ticket/add/?productId=80)Ticket. In this example, you can append up to seven domain names.
+Assume that you have purchased a multi-domain certificate to protect 10 domain names and that you entered three domain names in **Domains to Bind** and submitted the application for the certificate for the first time. If you want to protect more domain names, you only need to [Ticket](https://workorder-intl.console.aliyun.com/#/ticket/add/?productId=80). In this example, you can append up to seven domain names.
 
 |A GeoTrust Organization Validated \(OV\) multi-domain SSL certificate protects multiple domain names, such as aliyun.com, a.aliyun.com, b.aliyun.com, 1.a.aliyun.com, abc.com, and 1.abc.com.|
 
@@ -50,9 +48,9 @@ It protects all peer-level domain names of the wildcard domain name, such as 1.a
     -   As stipulated by CAs, if you enter only one domain name when you apply for the certificate for the first time, the certificate becomes a single-domain SSL certificate. Even if the certificate is a multi-domain SSL certificate while you purchase it, you cannot append domain names later.
     -   After you append domain names, the certificate is issued again. You must install the new certificate to protect the appended domain names. The expiration time and private key of the newly issued certificate are the same as those of the original certificate. The original certificate is still available.
     -   We recommend that you append all the remaining domain names at a time because the validity period of the new certificate is the same as that of the original certificate. The later the remaining domain names are appended, the shorter the validity period of the new certificate.
-3.  Specify **Certificate Category**. Alibaba Cloud SSL Certificates Service provides DV, EV, andOV SSL certificates. DV is short for Domain Validation.
+3.  Specify **Certificate Category**. Alibaba Cloud SSL Certificates Service provides OV SSL certificates. DV is short for Domain Validation.
 
-    If you select different types of certificates, you must provide different materials for approval when you apply for the certificates. For more information, see [Required materials](/intl.en-US/Issue Certificates/Application process/Apply for and validate certificates.md).
+    If you select different types of certificates, you must provide different materials for approval when you apply for the certificates. For more information, see [Required materials](/intl.en-US/Issue Certificates/Apply for a certificate.md).
 
     The following examples show how different types of certificates are displayed in the address bar of a browser:
 
@@ -66,9 +64,8 @@ It protects all peer-level domain names of the wildcard domain name, such as 1.a
     -   **Duration Purchased**: The validity period of a certificate, which is up to two years.
     **Note:**
 
-    -   The validity period of an SSL certificate is one or two years. The validity period varies with the certificate type. Before your certificate expires, you must renew it and apply for the renewed certificate. Then, you can install the renewed certificate on your web servers. For more information, see [Renewal upon expiration](/intl.en-US/Refund/Renewal upon expiration.md). If you select one year, your certificate must undergo the application, approval, and installation processes once a year. If you select two years, the processes must be taken every two years. If you want to reduce the number of approval processes, select two years.
+    -   The validity period of an SSL certificate is one or two years. The validity period varies with the certificate type. Before your certificate expires, you must renew it and apply for the renewed certificate. Then, you can install the renewed certificate on your web servers. For more information, see [Manual renewal](/intl.en-US/Renew Certificates/Manual renewal.md). If you select one year, your certificate must undergo the application, approval, and installation processes once a year. If you select two years, the processes must be taken every two years. If you want to reduce the number of approval processes, select two years.
     -   The validity period of a certificate starts after the certificate is approved.
-    -   For security purposes, you can only select one year for **Free DV SSL** and **Wildcard DV SSL** certificates.
 7.  Click **Buy Now** to complete the payment.
 
 
@@ -76,7 +73,7 @@ It protects all peer-level domain names of the wildcard domain name, such as 1.a
 
 After you purchase an SSL certificate, you must apply for the certificate and submit the required materials. You can obtain the certificate only after your application is approved.
 
-When you apply for a certificate, you must prepare the required materials, upload the electronic copies of the materials, and submit them for approval. For more information, see [Required materials](/intl.en-US/Issue Certificates/Application process/Apply for and validate certificates.md). After your application is approved, you can install the certificate on your web servers and Alibaba Cloud services.
+When you apply for a certificate, you must prepare the required materials, upload the electronic copies of the materials, and submit them for approval. For more information, see [Required materials](/intl.en-US/Issue Certificates/Apply for a certificate.md). After your application is approved, you can install the certificate on your web servers and Alibaba Cloud services.
 
 ## Certificate selection reference
 
@@ -93,7 +90,7 @@ When you apply for a certificate, you must prepare the required materials, uploa
 |1|1|One or two years|-|
 |One certificate is required to protect five or more domain names, including first-, second-, or lower-level domain names.|OV or EV|No limit|Multiple Domain Examples:
 
- -   www.market.aliyun.com
+-   www.market.aliyun.com
 -   example.aliyun.com
 -   example.aliyun1.com
 -   example.aliyun2.com
@@ -122,8 +119,4 @@ The following table lists different brands of digital certificates that Alibaba 
 |**Entrust**|Entrust is a world-renowned CA that has established a trusted virtual environment. It allows users to conduct secure digital transactions and communication from all locations. Entrust provides trust services for websites, software developers, and individuals, including issuing SSL certificates that are used for website authentication and encryption. Among the Fortune Global 500 companies, more than 83% businesses use Entrust SSL certificates.|None|
 
 **Note:** Different brands or CA vendors provide different types of certificates. For example, GlobalSign only provides professional OV certificates.
-
-## Expert staff service
-
-If you have more questions on selecting a certificate, we recommend that you use [expert staff service](https://market.aliyun.com/products/57004003/cmfw028439.html) to select and purchase a certificate and complete DNS or document verification.
 
