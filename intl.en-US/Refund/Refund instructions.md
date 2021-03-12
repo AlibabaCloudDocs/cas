@@ -36,8 +36,6 @@ In the certificate list, you can filter SSL certificates in the **Issued** state
 
 1.  On the Overview page, find the SSL certificate for which you want to request a refund, and click **Refund**.
 
-    ![Refunds](../images/p149195.png)
-
     **Note:** You can find the SSL certificate in the certificate list. If an SSL certificate is in the **Issued** state and has been issued for more than 30 calendar days, the system does not display the **Refund** button for this certificate.
 
 2.  In the Refund Application panel, specify **Refund Reasons**.
@@ -87,5 +85,5 @@ In the certificate list, you can filter SSL certificates in the **Issued** state
 
 ## References
 
-[Billing](/intl.en-US/Product Pricing/Billing.md)
+[Billing](/intl.en-US/Pricing/Billing.md)
 
