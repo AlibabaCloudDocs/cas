@@ -34,7 +34,7 @@ You can create a company profile by using one of the following methods:
     |**Company Region**|The region where the company is located.|
     |**Detailed Address**|The detailed address of the company.|
     |**Postal Code**|The postal code of the company.|
-    |**Business License**|A photo of the company license. You can click the ![Add](../images/p210626.png) icon to upload a photo of your business license. Both JPG and PNG formats are supported.|
+    |**Business License**|A photo of the company license. You can click the ![Add](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/4532455161/p210626.png) icon to upload a photo of your business license. Both JPG and PNG formats are supported.|
 
 6.  Click **OK**.
 
@@ -45,5 +45,5 @@ You can create a company profile by using one of the following methods:
 
 ## What to do next
 
-When you submit a certificate application, you can select an existing company profile from the **Company** drop-down list. For more information, see [Step 1: Fill in certificate application information](/intl.en-US/Issue Certificates/Application process/Apply for and validate certificates.md). When the CA validates your certificate application, they examine the company profile that you select.
+When you submit a certificate application, you can select an existing company profile from the **Company** drop-down list. For more information, see [Apply for a certificate](/intl.en-US/Issue Certificates/Apply for a certificate.md). When the CA validates your certificate application, they examine the company profile that you select.
 
