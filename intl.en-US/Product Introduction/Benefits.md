@@ -1,16 +1,24 @@
-# Benefits {#concept_cf2_v2p_ydb .concept}
+# Benefits
 
-Alibaba Cloud Certificates Service provides the following benefits:
+Alibaba Cloud supports multiple certificate brands and provides you with different types of SSL certificates.
 
-## Simplicity {#section_vkc_gfp_ydb .section}
+## Cooperation with famous brands
 
-A simplified purchase process accommodates to the purchasing habits of numerous Alibaba Cloud users.
+Alibaba Cloud cooperates with the most trusted third-party certification authorities \(CAs\) both in and outside China to ensure the certification credibility, encryption strength, and data security for website users.
 
-## Security {#section_wkc_gfp_ydb .section}
+## Quick issuance of SSL certificates
 
-The highly-secured certificate and key storage solutions eliminate the need for costly security investments.
+You can purchase and issue SSL certificates of different brands in the Alibaba Cloud Management Console, without the need to switch between different CA systems. Alibaba Cloud accelerates the approval and issuance of SSL certificates.
 
-## Usability {#section_xkc_gfp_ydb .section}
+## Deployment of SSL certificates to Alibaba Cloud services with a few clicks
 
-One-click deployment of digital certificates to Alibaba Cloud products provides an easy, convenient certificate management platform.
+SSL Certificates Service is deeply integrated with Alibaba Cloud services. It allows you to deploy SSL certificates to activated Alibaba Cloud services, such as Server Load Balancer \(SLB\) and Alibaba Cloud CDN with a few clicks. In this situation, you can maintain and manage a large number of certificates at minimal costs.
+
+## Easy-to-use API operations
+
+SSL Certificates Service allows you to purchase, apply for, download, and deploy multiple certificates at a time by calling API operations.
+
+## Refund
+
+SSL Certificates Service supports a 5-day money-back guarantee.
 
