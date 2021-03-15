@@ -17,7 +17,7 @@ The following table describes the features that SSL Certificates Service provide
 |HTTPS websites|Purchase certificate instances|You can purchase certificate instances in the SSL Certificate Service console. Then, you can use the certificate instances to apply for Domain Validation \(DV\), Organization Validation \(OV\), and Extended Validation \(EV\) certificates.For more information, see [Supported certificate types](#section_alp_t7y_yly).
 
 |[Select and purchase certificates](/intl.en-US/Buy Certificates/Select and purchase certificates.md)|
-|Apply for certificates|You can use the certificate instances that you purchase to apply for and issue certificates. If errors are returned by CAs, you must fix the errors in a timely manner.|[Step 1: Fill in certificate application information](/intl.en-US/Issue Certificates/Apply for and validate certificates.md)|
+|Apply for certificates|You can use the certificate instances that you purchase to apply for and issue certificates. If errors are returned by CAs, you must fix the errors in a timely manner.|[Apply for a certificate](/intl.en-US/Issue Certificates/Apply for a certificate.md)|
 |Download certificates|You can download issued certificates to your computer and install them on your web servers.|[Download certificates](/intl.en-US/Install Certificates/Download certificates.md)|
 |Deploy certificates|You can deploy issued certificates to Alibaba Cloud services with a few clicks.For more information, see [Related services](#section_i5v_dd4_g4f).
 
@@ -31,7 +31,7 @@ SSL Certificates Service supports DV, OV, and EV certificates. Different types o
 
 |Certificate type|Applicable website|Credibility level|Authentication strength|Security|Available certificate brand|
 |----------------|------------------|-----------------|-----------------------|--------|---------------------------|
-|Domain Validation \(DV\) SSL|Websites of individuals|Moderate|CAs verify the authenticity of a website, instead of an enterprise.|Moderate|GlobalSign|
+|Domain Validation \(DV\) SSL|Websites of individuals|Moderate|Certificate authorities \(CAs\) verify the authenticity of a website, but does not verify the authenticity of an enterprise.|Moderate|GlobalSign|
 |Organization Validation \(OV\) SSL|Websites of organizations such as governments, enterprises, and educational institutions|High|CAs verify the authenticity of an organization or an enterprise.|High|GlobalSign and Entrust|
 |Extended Validation \(EV\) SSL|Websites of organizations such as large-sized enterprises and financial institutions|Highest|CAs perform strict authentication.|Highest \(The address bar is in green.\)|Entrust|
 
