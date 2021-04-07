@@ -1,0 +1,12 @@
+# 如何设置证书的TLS协议版本？
+
+TLS协议版本包括TLSv1.0、TLSv1.1和TLSv1.2，您可以根据需要在阿里云产品和Web服务器上设置证书的TLS协议版本。
+
+如果您的证书部署到以下阿里云产品，请参见以下链接进行设置：
+
+-   SLB：[TLS安全策略说明](/intl.zh-CN/传统型负载均衡CLB/CLB用户指南/监听/TLS安全策略说明.md)
+-   CDN：[配置TLS](/intl.zh-CN/域名管理/HTTPS配置/配置TLS.md)
+-   DCDN：[配置TLS]()
+
+如果您的证书安装在Web服务器上，请在Web服务器的证书配置文件中找到`ssl_protocols TLSv1 TLSv1.1 TLSv1.2`，根据实际需要进行修改。例如：您的证书需要支持TLSv1.1和TLSv1.2版本，在`ssl_protocols TLSv1 TLSv1.1 TLSv1.2`中去掉`TLSv1`即可。
+
