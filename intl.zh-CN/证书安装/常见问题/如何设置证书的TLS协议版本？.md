@@ -1,6 +1,6 @@
 # 如何设置证书的TLS协议版本？
 
-TLS协议版本包括TLS v1.0、TLS v1.1、TLS v1.2和TLS v1.3。您可以根据需要在Web服务器或阿里云产品上设置证书的TLS协议版本。
+TLS协议版本包括TLS v1.0、TLS v1.1、TLS v1.2和TLS v1.3。TLS协议版本越高，HTTPS通信的安全性越高，但是相较于低版本TLS协议，高版本TLS协议对浏览器的兼容性较差。您可以根据业务需要，在安装证书的Web服务器或阿里云产品上设置证书的TLS协议版本。
 
 如果您的证书安装在Web服务器上，请在Web服务器的证书配置文件中找到`ssl_protocols TLSv1 TLSv1.1 TLSv1.2`，根据实际需要进行修改。例如，如果您的证书只支持TLS v1.1和TLS v1.2，在`ssl_protocols TLSv1 TLSv1.1 TLSv1.2`中去掉`TLSv1`；如果您的证书需要支持TLS v1.3，在`ssl_protocols TLSv1 TLSv1.1 TLSv1.2`中增加`TLSv1.3`。
 
