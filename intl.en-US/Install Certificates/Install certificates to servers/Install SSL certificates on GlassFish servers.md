@@ -10,7 +10,7 @@ In this example, **cer01** is the certificate name, **cer01.pem** is the certifi
 
 ## Procedure
 
-1.  L
+1.  Log on to the [SSL Certificates Service console](https://yundun.console.aliyun.com/?p=cas).
 
 2.  On the SSL Certificates Service page, find the certificate that you want to download, and click **Download** in the Actions column.
 
