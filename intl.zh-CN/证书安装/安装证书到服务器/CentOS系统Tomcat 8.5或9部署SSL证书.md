@@ -26,11 +26,7 @@ Web服务器：Tomcat 8.5或9
 
     **说明：** 每次下载证书都会产生新的密码，该密码仅匹配本次下载的证书。如果需要更新证书文件，同时也要更新匹配的密码。
 
-2.  将下载的证书和密码文件拷贝到Tomcate的**cerf**目录下。
-
-    **说明：**
-
-    ![拷贝证书文件](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9193571951/p38747.png)
+2.  将下载的证书和密码文件拷贝到Tomcat的**conf**目录下。
 
     **说明：** 如果需要安装JKS格式证书，可使用以下命令将PFX格式证书转化成JKS格式。
 
