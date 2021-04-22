@@ -18,8 +18,6 @@
     -   如果子CA是单独创建的，您需要为子CA单独续费，只延长该子CA的服务时长。
 4.  在**续费**页面，确认要续费的**当前配置**信息，选择**购买时长**（即要续费的服务时长），然后选中**服务协议**，并单击**立即购买**。
 
-    ![续费](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3896416161/p253404.png)
-
 5.  确认订单并完成支付。
 
     完成购买后，您可以在[SSL证书控制台](https://yundunnext.console.aliyun.com/?p=cas)的**私有证书**页面，查看私有CA的**到期时间**（已更新为续费后的到期时间）。
