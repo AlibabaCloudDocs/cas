@@ -8,7 +8,7 @@ Alibaba Cloud SSL Certificates Service allows you to download an SSL certificate
 
 -   An IIS server is installed and port 443 is enabled on your IIS server. This port is the default port for the HTTPS service.
 -   The OpenSSL tool is installed.
--   An SSL certificate is downloaded for your IIS server. For more information about how to download SSL certificates, see[Download certificates](/intl.en-US/Install Certificates/Download certificates.md).
+-   An SSL certificate is downloaded for your IIS server. For more information about how to download SSL certificates, see [Download certificates](/intl.en-US/Install Certificates/Download certificates.md).
 
     **Note:** When you apply for an SSL certificate, you must select **Automatic** for CSR Generation. If you select **Manual**, no certificate file is generated. You must find **Other** in the Server Type column, download the CRT certificate file, and then run the openssl command to convert the format of the certificate file from CRT to PFX.
 
