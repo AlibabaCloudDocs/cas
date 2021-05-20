@@ -33,8 +33,6 @@ For more information, see [Purchase an SSL Certificates Service instance](/intl.
     -   Organization Validation \(OV\) or Extended Validation \(EV\) SSL certificate: Click **Submit**.
     After you submit the certificate request, the message that prompts subsequent operations appears. Make sure that the phone calls from the CA are properly answered and check the verification email at the earliest opportunity as prompted. The CA sends the verification email to your contact email address.
 
-    ![Prompt to submit for review](../images/p211277.png)
-
 
 ## What to do next
 
