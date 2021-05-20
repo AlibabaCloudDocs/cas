@@ -34,7 +34,7 @@ The following table describes specific refund conditions.
 
 3.  In the **Refund Application** panel, select an option for **Refund Reasons** and click **Next**.
 
-    ![Refund request](../images/p263799.png)
+    ![Refund request](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1024741261/p263799.png)
 
     After you submit the refund request, wait for the validation.
 
