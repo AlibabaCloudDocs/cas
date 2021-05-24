@@ -22,5 +22,5 @@ The **Renewal Purchase** button is available only within 30 calendar days before
 
 **References**
 
-[Manual renewal](/intl.en-US/Renew Certificates/Manual renewal.md)
+[Manually renew an SSL certificate](/intl.en-US/Renew Certificates/Manually renew an SSL certificate.md)
 
