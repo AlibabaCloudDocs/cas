@@ -16,11 +16,11 @@ SSL证书服务支持下载证书并将其安装到您的Web服务器。证书�
 
     阿里云SSL证书支持安装到以下类型的Web服务器：
 
-    -   [Tomcat](/cn.zh-CN/证书安装/安装证书到服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md)
-    -   [Apache](/cn.zh-CN/证书安装/安装证书到服务器/在Apache服务器上安装SSL证书.md)
-    -   [Nginx](/cn.zh-CN/证书安装/安装证书到服务器/在Nginx（或Tengine）服务器上安装证书.md)
-    -   [IIS](/cn.zh-CN/证书安装/安装证书到服务器/在IIS服务器上安装SSL证书.md)
-    -   [GlassFish](/cn.zh-CN/证书安装/安装证书到服务器/在GlassFish服务器上安装SSL证书.md)
-    -   [JBoss](/cn.zh-CN/证书安装/安装证书到服务器/在JBoss服务器上安装SSL证书.md)
-    -   [Jetty](/cn.zh-CN/证书安装/安装证书到服务器/在Jetty服务器上安装SSL证书.md)
+    -   [Tomcat](/intl.zh-CN/证书安装/安装证书到服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md)
+    -   [Apache](/intl.zh-CN/证书安装/安装证书到服务器/在Apache服务器上安装SSL证书.md)
+    -   [Nginx](/intl.zh-CN/证书安装/安装证书到服务器/在Nginx（或Tengine）服务器上安装证书.md)
+    -   [IIS](/intl.zh-CN/证书安装/安装证书到服务器/在IIS服务器上安装SSL证书.md)
+    -   [GlassFish](/intl.zh-CN/证书安装/安装证书到服务器/在GlassFish服务器上安装SSL证书.md)
+    -   [JBoss](/intl.zh-CN/证书安装/安装证书到服务器/在JBoss服务器上安装SSL证书.md)
+    -   [Jetty](/intl.zh-CN/证书安装/安装证书到服务器/在Jetty服务器上安装SSL证书.md)
 
