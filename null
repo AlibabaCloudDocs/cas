@@ -1,26 +1,24 @@
-# 下载证书
+# Download certificates
 
-SSL证书服务支持下载证书并将其安装到您的Web服务器。证书安装完成后，该证书绑定的网站使用SSL协议通信，从而保证您网站数据传输的安全。本文档介绍了各服务器类型证书的下载操作。
+SSL Certificates Service allows you to download SSL certificates and install them on your web server. After an SSL certificate is installed, the website to which the certificate is bound communicates by using the Secure Sockets Layer \(SSL\) protocol to ensure data transmission security. This topic shows you how to download SSL certificates for different types of servers.
 
-## 操作步骤
+## Procedure
 
-**说明：** SSL证书服务支持下载**已签发**、**已过期**和**即将过期**的证书；不支持下载其他状态的证书。
+**Note:** SSL Certificates Service allows you to download an SSL certificate in the **Issued**, **Expired**, or **Pending Expiration** state. You cannot download SSL certificates in other states.
 
-1.  在SSL证书页面，定位到需要下载的证书并单击证书卡片右下角的**下载**。
+1.  On the **SSL Certificates Service** page, find the certificate that you want to download, and click **Download** in the **Actions** column.
 
-    ![下载](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2256669951/p39167.jpg)
+2.  Find the server type for which you want to install the SSL certificate in the **Server Type** column, and click **Download** in the **Actions** column to download the package to your on-premises machine.
 
-2.  定位到您需要安装证书的服务器类型并单击右侧**操作**栏的**下载**，将证书压缩包下载到本地。
+3.  Decompress the package and install the SSL certificate on your web server.
 
-3.  将证书解压缩后安装到您的Web服务器上。
+    The SSL certificates that you purchase by using SSL Certificates Service can be installed on web servers of the following types:
 
-    阿里云SSL证书支持安装到以下类型的Web服务器：
-
-    -   [Tomcat](/intl.zh-CN/证书安装/安装证书到服务器/Tomcat服务器安装SSL证书/安装PFX格式证书.md)
-    -   [Apache](/intl.zh-CN/证书安装/安装证书到服务器/在Apache服务器上安装SSL证书.md)
-    -   [Nginx](/intl.zh-CN/证书安装/安装证书到服务器/在Nginx（或Tengine）服务器上安装证书.md)
-    -   [IIS](/intl.zh-CN/证书安装/安装证书到服务器/在IIS服务器上安装SSL证书.md)
-    -   [GlassFish](/intl.zh-CN/证书安装/安装证书到服务器/在GlassFish服务器上安装SSL证书.md)
-    -   [JBoss](/intl.zh-CN/证书安装/安装证书到服务器/在JBoss服务器上安装SSL证书.md)
-    -   [Jetty](/intl.zh-CN/证书安装/安装证书到服务器/在Jetty服务器上安装SSL证书.md)
+    -   [Tomcat](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates in Tomcat servers/Install .pfx SSL certificates.md)
+    -   [Apache](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on Apache servers.md)
+    -   [Nginx](/intl.en-US/Install Certificates/Install certificates to servers/Install an SSL certificate on an NGINX server or a Tengine server.md)
+    -   [IIS](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on IIS servers.md)
+    -   [GlassFish](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on GlassFish servers.md)
+    -   [JBoss](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on JBoss servers.md)
+    -   [Jetty](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on Jetty servers.md)
 
