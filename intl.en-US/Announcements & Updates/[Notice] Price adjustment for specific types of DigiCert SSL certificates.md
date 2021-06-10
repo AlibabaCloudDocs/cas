@@ -6,9 +6,3 @@ DigiCert issues a notice on the price increase for SSL certificates. Therefore, 
 
 Thank you for your support.
 
-## 相关信息
-
-以下是来自DigiCert的证书价格调整通知。
-
-![原厂通知](../images/p279985.png)
-
