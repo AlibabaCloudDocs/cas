@@ -1,10 +1,10 @@
 # Download a root certificate
 
-This topic provides the links required to download the root certificates provided by specific certificate authorities \(CAs\). You can download and install the root certificates based on your business requirements. The CAs include DigiCert and GlobalSign.
+This topic provides the links required to download the root certificates provided by specific certificate authorities \(CAs\). You can download and install the root certificates based on your business requirements.
 
 ## Scenarios
 
-If your web services are accessed by using client browsers, you do not need to manually install root certificates because the root certificates are built into the client browsers. In this situation, you need only to install the Secure Sockets Layer \(SSL\) certificates issued by CAs on your web server. This way, your web server can communicate with the client browsers over HTTPS. For more information about how to install SSL certificates, see [t123605.md\#](/intl.en-US/Install Certificates/How can I install SSL certificates?.md).
+If your web services are accessed by using client browsers, you do not need to manually install root certificates because the root certificates are built into the client browsers. In this situation, you need only to install the Secure Sockets Layer \(SSL\) certificates issued by CAs on your web server. This way, your web server can communicate with the client browsers over HTTPS. For more information about how to install SSL certificates, see [Installation overview](/intl.en-US/Install Certificates/Installation overview.md).
 
 If your web services are accessed by using other clients, such as apps or Java clients, you must manually install root certificates on the clients because no root certificates are built into the clients. If you do not install the root certificates in this situation, the clients cannot verify the information encrypted by your web server. For example, if your web server is installed with a DigiCert Organization Validation \(OV\) SSL certificate, the clients must be installed with DigiCert OV root certificates before they can communicate with your web server over HTTPS.
 
@@ -14,9 +14,9 @@ We recommend that you implement client verification by using the default Trustst
 
 ## Download links for root certificates
 
--   [DigiCert EV root certificate](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/170239/cn_zh/1597374203590/Digicert-EV-root.cer)
--   [DigiCert OV and DV root certificates](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/170239/cn_zh/1597374262030/Digicert-OV-DV-root.cer)
--   [GlobalSign DV and OV root certificates](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/182164/cn_zh/1620365676642/GlobalSign-DV%26OV-root.cer)
+Only the following root certificates can be downloaded:
 
-**Note:** You cannot download Entrust root certificates.
+-   [DigiCert EV root certificate](https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/170239/cn_zh/1597374203590/Digicert-EV-root.cer)
+-   [DigiCert OV and DV root certificates](https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/170239/cn_zh/1597374262030/Digicert-OV-DV-root.cer)
+-   [GlobalSign DV and OV root certificates](https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/182164/cn_zh/1620365676642/GlobalSign-DV%26OV-root.cer)
 
