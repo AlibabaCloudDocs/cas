@@ -1,28 +1,30 @@
-# 域名证书申请注意事项
+# Domain name certificate application note
 
-## 自动签发
+When the domain name console automatically issues a domain name association certificate, it can be automatically issued without requiring the user to apply for the certificate, there are the following prerequisites for the configuration of the relevant subsequent certificate issuance and verification file:
 
-您可以在域名服务控制台自动签发域名关联证书，而无需在申请证书后配置证书签发验证文件。自动签发有如下前提条件：
+-   Domain name in ALI cloud WAN network
+-   Cloud analytics in ALI cloud
 
--   域名在阿里云万网。
--   云解析在阿里云。
+    If cloud resolution is not in ALI cloud, the autoissue cannot be completed after the certificate application. If the user does not have the ability to configure DNS resolution, it is recommended that DNS resolution be transferred to Ali cloud, authorization is automatically configured for DNS authentication parsing records in the background so that the issue can be completed. Otherwise, you need to go to the [Alibaba Cloud shield Certificate Services console](https://account.alibabacloud.com/login/login.htm) to purchase the DV toll certificate. After that, the configuration is configured according to the DNS authentication resolution requirements in the console's progress, go to the third-party DNS resolution console to configure the specified TXT authentication resolution, it is used to prove the user's administration of the domain name before the certificate is issued.
 
-    如果云解析不在阿里云，证书申请后，无法完成自动签发。如果用户无配置DNS解析能力，建议把DNS解析转入阿里云，授权后台自动进行DNS验证解析记录配置，这样才可完成签发。否则，需用户自行去阿里云[SSL证书控制台](https://home.console.aliyun.com)，购买DV收费证书后，根据控制台进度中DNS验证解析配置要求，去第三方的DNS解析控制台配置指定的TXT验证解析，用于证明用户对该域名的管理权，才可签发证书。
+    If cloud resolution is not in ALI cloud, the autoissue cannot be completed after the certificate application. If the user does not have the ability to configure DNS resolution, it is recommended that DNS resolution be transferred to Ali cloud, authorization is automatically configured for DNS authentication parsing records in the background so that the issue can be completed.
 
-    如果云解析不在阿里云，证书申请后，无法完成自动签发。如果用户无配置DNS解析能力，建议把DNS解析转入阿里云，授权后台自动进行DNS验证解析记录配置，这样才可完成签发。
+    When there is a large number of certificate-issuing requirements, it is recommended that you transfer DNS resolution to Ali cloud, certificate Application and management work can be greatly simplified.
 
-    当有大量的证书签发需求时，建议您把DNS解析转入阿里云，可以大量简化证书申请及管理工作量。
+-   Domain Name certified by real name
+-   Domain name within the effective period
 
--   域名经过实名认证。
--   域名在有效期内。
+Free certificates
 
-## 免费证书
+-   Domain Name and resolution are required in ALI cloud to issue a free certificate
 
--   域名及解析需在阿里云，才可签发免费证书。
+    The free certificate is very large for personal users and testing purposes in the Ali cloud platform, in order to improve the user automation interaction experience, it is necessary for users to move domain names and cloud resolution into the Alibaba Cloud, to complete the issuance of free certificates.
 
-    免费证书在阿里云平台中个人用户及测试用途的签发量非常大，为了改善用户自动化签发交互体验，需请用户把域名及云解析迁入阿里云，才可完成免费证书签发。
+-   Issue quantity limit
 
--   免费证书无SLA保证，建议商业化的网站签发收费证书。
+    The maximum number of issues for a free certificate per day is 20. Only until the next day \(24 hours later\) when the quota user of the one-day free certificate is finished\) the issue of the new free certificate will not continue until the new certificate is issued. Based on this calculation, an Alibaba Cloud real-name authentication account, the maximum number of free certificates issued a year is 7300 free SSL digital certificates.
 
-证书相关问题，请提云盾证书服务工单联系我们。感谢您对阿里云的支持！
+-   Free Certificate No SLA guarantee, it is recommended that commercial websites issue toll certificates
+
+For certificate-related questions, please contact us with cloud shield certificate service orders. Thank you for your support to Ali cloud!
 
