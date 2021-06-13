@@ -1,24 +1,28 @@
-# Download certificates
+# 域名证书申请注意事项
 
-SSL Certificates Service allows you to download SSL certificates and install them on your web server. After an SSL certificate is installed, the website to which the certificate is bound communicates by using the Secure Sockets Layer \(SSL\) protocol to ensure data transmission security. This topic shows you how to download SSL certificates for different types of servers.
+## 自动签发
 
-## Procedure
+您可以在域名服务控制台自动签发域名关联证书，而无需在申请证书后配置证书签发验证文件。自动签发有如下前提条件：
 
-**Note:** SSL Certificates Service allows you to download an SSL certificate in the **Issued**, **Expired**, or **Pending Expiration** state. You cannot download SSL certificates in other states.
+-   域名在阿里云万网。
+-   云解析在阿里云。
 
-1.  On the **SSL Certificates Service** page, find the certificate that you want to download, and click **Download** in the **Actions** column.
+    如果云解析不在阿里云，证书申请后，无法完成自动签发。如果用户无配置DNS解析能力，建议把DNS解析转入阿里云，授权后台自动进行DNS验证解析记录配置，这样才可完成签发。否则，需用户自行去阿里云[SSL证书控制台](https://home.console.aliyun.com)，购买DV收费证书后，根据控制台进度中DNS验证解析配置要求，去第三方的DNS解析控制台配置指定的TXT验证解析，用于证明用户对该域名的管理权，才可签发证书。
 
-2.  Find the server type for which you want to install the SSL certificate in the **Server Type** column, and click **Download** in the **Actions** column to download the package to your on-premises machine.
+    如果云解析不在阿里云，证书申请后，无法完成自动签发。如果用户无配置DNS解析能力，建议把DNS解析转入阿里云，授权后台自动进行DNS验证解析记录配置，这样才可完成签发。
 
-3.  Decompress the package and install the SSL certificate on your web server.
+    当有大量的证书签发需求时，建议您把DNS解析转入阿里云，可以大量简化证书申请及管理工作量。
 
-    The SSL certificates that you purchase by using SSL Certificates Service can be installed on web servers of the following types:
+-   域名经过实名认证。
+-   域名在有效期内。
 
-    -   [Tomcat](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates in Tomcat servers/Install .pfx SSL certificates.md)
-    -   [Apache](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on Apache servers.md)
-    -   [Nginx](/intl.en-US/Install Certificates/Install certificates to servers/Install an SSL certificate on an NGINX server or a Tengine server.md)
-    -   [IIS](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on IIS servers.md)
-    -   [GlassFish](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on GlassFish servers.md)
-    -   [JBoss](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on JBoss servers.md)
-    -   [Jetty](/intl.en-US/Install Certificates/Install certificates to servers/Install SSL certificates on Jetty servers.md)
+## 免费证书
+
+-   域名及解析需在阿里云，才可签发免费证书。
+
+    免费证书在阿里云平台中个人用户及测试用途的签发量非常大，为了改善用户自动化签发交互体验，需请用户把域名及云解析迁入阿里云，才可完成免费证书签发。
+
+-   免费证书无SLA保证，建议商业化的网站签发收费证书。
+
+证书相关问题，请提云盾证书服务工单联系我们。感谢您对阿里云的支持！
 
