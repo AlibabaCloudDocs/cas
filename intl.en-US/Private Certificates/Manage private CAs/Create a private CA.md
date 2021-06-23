@@ -1,71 +1,71 @@
 # Create a private CA
 
-SSL Certificates Service provides the Private Certificate Authority \(PCA\) service. This service allows you to create private certificate authorities \(CAs\) for your enterprise at low costs without the need to build and maintain public key infrastructure \(PKI\). This topic describes how to create a private CA in the SSL Certificates Service console. The operation to create a private CA is the operation to purchase the PCA service.
+SSL Certificates Service supports Private Certificate Authority \(PCA\). PCA allows you to create a private certificate authority \(CA\) for your enterprise at low costs. This way, you do not need to create or maintain public key infrastructure \(PKI\). This topic describes how to create a private CA in the SSL Certificates Service console. After you create a private CA, PCA is enabled.
 
-Private CAs are divided into private root CAs and private intermediate CAs. A private intermediate CA is subordinate to a private root CA. A private root CA contains one or more private intermediate CAs. Only private intermediate CAs can issue private certificates, such as server certificates and client certificates.
+Private CAs are classified into private root CAs and private intermediate CAs. A private intermediate CA is subordinate to a private root CA. A private root CA may include one or more private intermediate CAs. Only private intermediate CAs can issue private certificates, including server certificates and client certificates.
 
-If you have not created a private CA, you must first create a private root CA. After a private root CA is created, you obtain a private intermediate CA in addition to the private root CA. By default, the private intermediate CA can issue 10 certificates.
+If you create a private CA for the first time, you must first create a private root CA. After you create a private root CA, you can obtain one private root CA and one private intermediate CA. By default, the private intermediate CA has the quota to issue 10 private certificates.
 
-You can continue to create multiple private intermediate CAs under the existing private root CA based on the organizational framework of your enterprise. For example, you can create private intermediate CAs for different departments in your enterprise. Alternatively, you can purchase certificates for the existing private intermediate CA to increase the number of certificates that this intermediate CA can issue.
+You can create more private intermediate CAs for the existing private root CA based on the organizational structure of your enterprise. For example, you can use the private root CA to create private intermediate CAs for different departments of your enterprise. You can also purchase the quota for private certificates to issue more private certificates by using the existing private intermediate CA.
 
 ## Create a private root CA
 
-If you have not created a private CA, you must first create a private root CA by performing the following operations:
+If you create a private CA for the first time, perform the following operations to first create a private root CA:
 
 1.  Log on to the [SSL Certificates Service console](https://yundunnext.console.aliyun.com/?p=cas).
 
 2.  In the left-side navigation pane, click **Private Certificates**.
 
-3.  On the **Private Certificates** page, click **Purchase Private Root CA** above the private CA list.
+3.  In the upper-left corner of the **Private Certificates** page, click **Purchase Private Root CA**.
 
-4.  In the **Purchase Private Root CA** panel, set the parameters.
+4.  In the **Purchase Private Root CA** panel, configure the parameters.
 
-    ![Purchase a private root CA](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7276041261/p253396.png)
+    ![Purchase Private Root CA](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7276041261/p253396.png)
 
     The following table describes the parameters.
 
     |Parameter|Description|
     |---------|-----------|
-    |**Commodity Module**|By default, **Certificate Service** is selected. This means that you can purchase the PCA service for your enterprise to maintain and manage certificates.|
-    |**Intended Use**|**Internal Use in Enterprise \(Without Regulatory Requirements\)**: This option is selected by default. PCA is used for network communication that requires cryptographic technology among internal systems of an enterprise, such as the office automation \(OA\) and human resources \(HR\) systems. PCA enables user authentication and secure transmission of application data. PCA is not used to meet regulatory and industry specifications.|
-    |**Product Specifications**|By default, **Create Root CA** is selected.|
-    |**Certificate Algorithm**|Select a type of certificate algorithm that the private CA uses when it issues certificates. Valid values: **RSA**, **Chinese Cryptographic Algorithm \(SM\)**, and **ECC**. |
-    |**Subscription Duration**|Select a duration for the service to be purchased. The minimum value is **1 Month**. **Note:**
+    |**Commodity Module**|**Certificate Service** is automatically selected. This option allows you to create a private CA for your enterprise to maintain and manage certificates.|
+    |**Intended Use**|**Internal Use in Enterprise \(Without Regulatory Requirements\)** is automatically selected. PCA is suitable for enterprises that require encrypted communication between its internal systems to implement identity authentication and secure transmission of application data. The internal systems include office automation \(OA\) and human resources \(HR\) systems. PCA is not used to meet regulatory requirements and industry specifications.|
+    |**Product specifications**|**Create a root CA** is automatically selected.|
+    |**Certificate Algorithm**|The type of algorithm that is used by the certificates issued by the private CA . Valid values: **RSA**, **SM Algorithms \(Commercial Cryptographic Algorithms of China\)**, and **ECC**. |
+    |**Subscription Duration**|The subscription duration of the private CA. The minimum value is **1 Month**. **Note:**
 
-    -   You can apply for certificates from a private CA within the duration of the PCA service that you purchase. After the PCA service expires, the private CA cannot issue certificates even if the number of remaining certificates that the private CA can issue is not 0.
-    -   The validity period of a private certificate issued by a private CA cannot exceed the duration of the PCA service that you purchase. For example, if the duration of the PCA service that you purchase is one month, the validity period of a private certificate issued by the private CA cannot exceed 31 days. |
+    -   You can use a private CA to issue private certificates within the subscription period of the private CA. After the private CA expires, you cannot use the private CA to issue private certificates even if the quota to issue private certificates is not used up.
+    -   The validity period of private certificates issued by the private CA cannot exceed the subscription period of the private CA. For example, if you set Subscription Duration to 1 Month, the validity period of private certificates issued by the private CA cannot exceed 30 days. |
 
 5.  Click **Buy Now**.
 
 6.  Confirm your order and complete the payment.
 
-    After you complete the payment, you can view the new private CA on the **Private Certificates** page in the [SSL Certificates Service console](https://yundunnext.console.aliyun.com/?p=cas). After a private root CA is created, you obtain a private intermediate CA in addition to the private root CA. By default, the values of **Status** of the private root CA and private intermediate CA are **Disabled**.
+    After you complete the payment, you can view the newly created private CA on the **Private Certificates** page in the [SSL Certificates Service console](https://yundunnext.console.aliyun.com/?p=cas). After you create a private root CA, you can obtain one private root CA and one private intermediate CA. By default, both the private root CA and the private intermediate CA are in the **Disabled** state.
 
     ![Private CA](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7276041261/p253440.png)
 
 
 ## What to do next
 
-After you create a private CA, you must enable the private CA so that it can issue private certificates. For more information about how to enable a private CA, see [Enable a private CA](/intl.en-US/Private Certificates/Manage private CAs/Enable a private CA.md).
+After you create a private CA, you must enable the private CA before you can use it to issue private certificates. For more information about how to enable a private CA, see [Enable a private CA](/intl.en-US/Private Certificates/Manage private CAs/Enable a private CA.md).
 
 ## Related operations
 
--   **Create a private intermediate CA**: After you create and enable a private root CA, you can continue to create multiple private intermediate CAs under this private root CA.
+-   **Create a private intermediate CA**: After you create and enable a private root CA, you can create multiple private intermediate CAs for this private root CA.
 
-    Notes:
+    **Note:**
 
-    -   By default, a private intermediate CA that you create under the existing private root CA does not contain certificate resources. This means that the number of certificates that the private intermediate CA can issue is 0. You must purchase certificates for the private intermediate CA after you create it.
-    -   When you create a private intermediate CA under the existing private root CA, the **certificate algorithm** of the private intermediate CA is the same as that of the private root CA by default and cannot be changed.
-    In the private CA list, find the private root CA that is the **Enabled** state and under which you want to create a private intermediate CA, and click **Create CA** in the **Actions** column. Then, complete the purchase by following the instructions on the page that appears.
+    -   By default, a private intermediate CA created for the existing private root CA does not have the quota to issue private certificates. You cannot use this private intermediate CA to issue private certificates. After you create a private intermediate CA for the existing private root CA, you must purchase the required quota before you can use the private intermediate CA to issue private certificates.
+    -   When you create a private intermediate CA for the existing private root CA, the value of the **Certificate Algorithm** parameter for the private intermediate CA is automatically set to that for the private root CA. You cannot modify this parameter.
+    Procedure: In the private CA list, find the private root CA that is in the **Enabled** state and click **Create CA** in the **Actions** column. On the page that appears, configure the parameters and complete the payment as prompted.
 
-    ![Create a private intermediate CA](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7276041261/p265997.png)
+    ![Create CA](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7276041261/p265997.png)
 
--   **Purchase certificates**: If the number of certificates that the existing private intermediate CA contains cannot meet your requirements, you can purchase certificates under this private intermediate CA to increase the number of certificates that it can issue.
+-   **Purchase the quota to issue private certificates**: If an existing private intermediate CA does not have the sufficient quota to issue the required number of private certificates, you can purchase extra quotas. This way, you can use the private intermediate CA to issue more private certificates.
 
-    In the private CA list, find the private intermediate CA for which you want to purchase certificates, and click **Purchase Certificate** in the **Actions** column. Then, complete the purchase by following the instructions on the page that appears.
+    Procedure: In the private CA list, find the private intermediate CA for which you want to purchase the quota to issue private certificates and click **Purchase Certificate** in the **Actions** column. On the page that appears, complete the payment as prompted.
 
-    ![Purchase certificates](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8276041261/p266004.png)
+    ![Purchase the quota to issue private certificates](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8276041261/p266004.png)
 
--   [Claim a refund](/intl.en-US/Private Certificates/Manage private CAs/Claim a refund.md): You can claim a refund for a private CA that is in the Disabled state. If the private CA is enabled, you cannot claim a refund for the private CA.
--   [Renew a private CA](/intl.en-US/Private Certificates/Manage private CAs/Renew a private CA.md): A private CA cannot issue certificates after the PCA service expires. You can renew the PCA service to extend its service duration.
+-   [Claim a refund](/intl.en-US/Private Certificates/Manage private CAs/Claim a refund.md): You can request a refund for a private CA that is in the Disabled state. If the private CA is enabled, you cannot request a refund.
+-   [Renew a private CA](/intl.en-US/Private Certificates/Manage private CAs/Renew a private CA.md): After a private CA expires, you cannot use the private CA to issue private certificates. You can renew the private CA to continue to use it.
 
