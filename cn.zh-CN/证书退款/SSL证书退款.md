@@ -12,7 +12,7 @@ SSL证书的退款对象指您已购买的SSL证书订单实例。
 
 -   云盾证书服务购买页
 
-    ![云盾证书服务购买页](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2240288161/p265444.png)
+    ![云盾证书服务购买页](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/9521326261/p265444.png)
 
 -   快捷购买证书
 
@@ -32,7 +32,7 @@ SSL证书的退款对象指您已购买的SSL证书订单实例。
 -   SSL证书订单实例下单超过7个自然日后， 不再支持退款。
 -   对于已签发证书，在下单后7个自然日内已完成吊销并申请退款（成功吊销后才可以发起退款申请），即可退还订单费用。
 -   对于下单超过7个自然日后才进行吊销，该证书不满足退款条件，但是只要在购买后30个自然日内完成吊销，即可返回证书额度，您可使用该返还的证书额度申请新的证书。超过30个自然日吊销不返还额度，因此也无法退款。
-    **购买的增值服务基础版和高级版的情况下**，距离SSL证书订单实例的下单时间（完成支付）**不超过30个自然日**。
+    **购买增值服务基础版和高级版的情况下**，距离SSL证书订单实例的下单时间（完成支付）**不超过30个自然日**。
 
     **说明：**
 
@@ -52,19 +52,19 @@ SSL证书的退款对象指您已购买的SSL证书订单实例。
 
 3.  在**SSL证书**页面，单击**订单管理**页签。
 
-4.  在**订单管理**页签，定位到要申请退款的证书订单实例，单击操作列下的**退款**。
+4.  在**订单管理**页签，定位到要申请退款的证书订单实例，单击**操作**列下的**退款**。
 
-    ![退款](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0885938161/p263748.png)
+    **说明：** 只有当证书订单满足[支持退款的条件](#section_wlj_bry_zgb)时，操作列下才会出现**退款**按钮。
 
-    **说明：** 只有在证书订单实例下单后的28自然日内，才会出现**退款**按钮。证书订单实例下单超过28自然日后，将不再支持退款。
+    ![退款](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0621326261/p263748.png)
 
 5.  在**退款申请**对话框，单击**确定**。
 
     ![退款申请](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0885938161/p263766.png)
 
-    提交退款申请后，如果证书订单实例满足[退款条件](#section_wlj_bry_zgb)，则已支付的费用将按照原支付路径退还给您，且证书订单**状态**将更新为**退款成功**。
+    退款申请成功并通过审核后，已支付的费用将按照原支付路径退还给您，且证书订单**状态**将更新为**退款成功**。
 
-    ![退款成功](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0885938161/p263787.png)
+    ![退款成功](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/0621326261/p263787.png)
 
 
 ## 相关文档
